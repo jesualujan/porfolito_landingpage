@@ -2022,7 +2022,8 @@ img,
  * # preloader
  *
  * ------------------------------------------------------------------- */
-#preloader {
+
+ #preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -2094,10 +2095,11 @@ img,
     }
 }
 
+
 /* ------------------------------------------------------------------- 
  * ## page loaded
  * ------------------------------------------------------------------- */
-.ss-loaded #preloader {
+ .ss-loaded #preloader {
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all .6s .9s ease-in-out;
@@ -2940,7 +2942,7 @@ input[type="button"].btn--primary:focus {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -3554,11 +3556,22 @@ input[type="button"].btn--primary:focus {
     color: white;
     margin-right: var(--vspace-0_75);
 }
-
-.s-hero__content-social a:hover, 
-.s-hero__content-social a:focus {
-    color: var(--color-2-light);
+.s-hero__content-social .social-fb:hover,
+.s-hero__content-social .social-fb:hover:focus {
+    color: #3b5998;
 }
+
+.s-hero__content-social .social-gh:hover,
+.s-hero__content-social .social-gh:hover:focus {
+    color: #3b3d3d;
+}
+
+.s-hero__content-social .social-ld:hover,
+.s-hero__content-social .social-ld:hover:focus {
+    color: #007bb5;
+}
+
+
 
 .s-hero__content-social a:last-child {
     margin-right: 0;
@@ -4005,7 +4018,7 @@ input[type="button"].btn--primary:focus {
 
 .folio-item__thumb::after {
     z-index: 1;
-    content: "...";
+    content: '+';
     font-family: var(--font-2);
     font-weight: 300;
     font-size: 3rem;
@@ -4446,9 +4459,6 @@ input[type="button"].btn--primary:focus {
     color: white;
 }
 
-.s-footer a:hover, .s-footer a:focus {
-    color: var(--color-2);
-}
 
 /* ------------------------------------------------------------------- 
  * ## footer social
@@ -4472,15 +4482,26 @@ input[type="button"].btn--primary:focus {
     color: white;
 }
 
-.s-footer__social a:focus, 
-.s-footer__social a:hover {
-    color: var(--color-2);
-}
-
 .s-footer__social li {
     padding-left: 0;
     margin-right: 1.6rem;
 }
+
+.s-footer__social .social-fb:hover,
+.s-footer__social .social-fb:hover:focus {
+    color: #3b5998;
+}
+
+.s-footer__social .social-gh:hover,
+.s-footer__social .social-gh:hover:focus {
+    color: #3b3d3d;
+}
+
+.s-footer__social .social-ld:hover,
+.s-footer__social .social-ld:hover:focus {
+    color: #007bb5;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## copyright
@@ -4549,7 +4570,7 @@ input[type="button"].btn--primary:focus {
 
 .ss-go-top a:hover, 
 .ss-go-top a:focus {
-    background-color: var(--color-1);
+    background-color: var(--color-2);
 }
 
 .ss-go-top svg {
